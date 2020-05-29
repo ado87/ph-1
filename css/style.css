@@ -1,37 +1,4 @@
-* { margin: 0; padding: 0;}
-html { height: 100%;}
-a { text-decoration: none;}
-ul { list-style-type: none;}
-
-#main_header {
-    margin: 0 auto;
-    width: 1200px; height: 120px;
-    position: relative;
-    /* background: #ccc; */
-}
-#main_header > .logo {
-    padding-left: 50px;
-    float: left;
-    padding-top: 30px;
-}
-#main_gnb { 
-    float: right;
-    padding-right: 100px;
-}
-#main_gnb > ul > li {
-    display: inline-block;
-    margin-left: 50px;
-    line-height: 120px;
-}
-#main_gnb > ul > li a {
-    color: black;
-    text-transform: uppercase;
-    font-family: 'Pangolin', cursive;
-}
-#main_gnb > ul > li a:hover {
-    color: #f57d21;
-    text-decoration: underline;
-}
+@import url('./reset.css');
 
 /* visual */
 #main_visual {

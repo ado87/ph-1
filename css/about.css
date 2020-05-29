@@ -1,36 +1,4 @@
-* { margin: 0; padding: 0;}
-a { text-decoration: none;}
-ul { list-style-type: none;}
-
-#main_header {
-    margin: 0 auto;
-    width: 1200px; height: 100px;
-    position: relative;
-    /* background: #ccc; */
-}
-#main_header > .logo {
-    padding-left: 50px;
-    float: left;
-    padding-top: 20px;
-}
-#main_gnb { 
-    float: right;
-    padding-right: 100px;
-}
-#main_gnb > ul > li {
-    display: inline-block;
-    margin-left: 50px;
-    line-height: 100px;
-}
-#main_gnb > ul > li a {
-    color: black;
-    text-transform: uppercase;
-    font-family: 'Pangolin', cursive;
-}
-#main_gnb > ul > li a:hover {
-    color: #f57d21;
-    text-decoration: underline;
-}
+@import url('./reset.css');
 
 /* about */
 #about {
@@ -60,16 +28,21 @@ ul { list-style-type: none;}
     font-size: 20px;
     width: 600px;
     float: right;
-    padding-top: 60px;
+    margin-top: 60px;
     color: #f57d21;
+}
+#about > .about_right {
+    width: 1200px;
 }
 #about > .about_right .text {
     position: relative;
+    left: -20px;
     top: 70px;
     margin-top: 20px;
 }
 #about > .about_right .text-1 {
     position: relative;
+    left: -20px;
     top: 80px;
     margin-top: 20px;
     font-size: 13px;
@@ -86,10 +59,36 @@ ul { list-style-type: none;}
     width: 1200px;
     margin: 0 auto;
 }
-#info > ul > li {
+#info > .left {
+    width: 50%;
+    /* background: #ccc; */
+    float: left;
+}
+#info > .left > ul > li {
     padding: 10px;
     margin-left: 100px;
 }
-#info > ul > li span {
+#info > .left > ul > li span {
     font-weight: bold;
+}
+#info > .right {
+    width: 50%;
+    height: 205px;
+    /* background: #999; */
+    float: right;
+    overflow: hidden;
+}
+#info > .right > a img {
+    width: 30px;
+    padding: 5px;
+    /* border: 2px solid #000; */
+    border-radius: 8px;
+    position: relative;
+    top: 70%;
+    left: 80%;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+#info > .right > a:hover img {
+    transform: scale(1.2);
 }
