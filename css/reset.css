@@ -6,7 +6,7 @@ ul { list-style-type: none;}
 #main_header {
     margin: 0 auto;
     width: 1200px; height: 120px;
-    position: relative;
+    position: fixed;
     /* background: #ccc; */
 }
 #main_header > .logo {
